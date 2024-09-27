@@ -1,35 +1,92 @@
-/* Outdated CSS */
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(circle, #1a81ff 0%, #00529ee4 100%);
 }
 
-h1 {
-    margin: 0;
+.head{
+  overflow: hidden;
+  background-color: #8fb2ff;
+  padding: 9px 3px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+.head a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
 }
 
-li {
-    margin: 0;
-    padding: 0;
+
+.head a.sinkers {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-p {
-    margin: 0;
-    padding: 0;
+.head a:hover {
+  background-color: #2600ff;
+  color: black;
 }
 
-img {
-    width: 100%;
-    height: auto;
+.header-right {
+  float: right;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+@media screen and (max-width: 500px) {
+.head a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+  .header-right {
+    float: none;
+  }
+}
+
+.sinkdesc {
+  position: relative;
+  background-color: rgb(168, 156, 255);
+  color: rgb(64, 0, 255);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  margin: 20px;
+  border: 8px groove rgb(137, 163, 255);
+}
+
+.conting {
+  background: fixed;
+  background-color: aliceblue;
+  background-image: repeating-radial-gradient(circle, #0c0298 0%, #5d77f6 100%);
+  max-width: 800px;
+  margin: 60px auto;
+  height: auto;
+  padding: 20px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 00.3);
+}
+
+.cprt{
+  background-color: #aacaff;
+  text-align: center;
+  padding: 2px;
+}
+
+.picorder{
+  border: 4px solid rgb(137, 163, 255);
+  border-radius: 2%;
+  overflow: hidden;
 }
